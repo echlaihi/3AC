@@ -71,7 +71,27 @@
         
 
     }
-
+    .img-container{
+        width: 100%;
+        height: 50vh;
+        background-color: black;
+        z-index: 100;
+        
+    }
+    img{
+        width: 100%;
+        height: 50vh;
+        /* display: none; */
+    }
+    
+    footer {
+        color: black;
+        padding: .7rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: #484545;
+        font-size: 1.3rem;
+    }
     @media screen and (max-width: 570px) {
         h1{
             font-size: 1.5rem;
@@ -79,16 +99,26 @@
         h2, a{
             font-size: 1.6rem;
         }
+
+        img, .img-container{ 
+            height: 30vh;
+        }
     }
 </style>
 <body>
     <div class="head">
         <h1>Documents 3AC Collége Ibn Toumart 2026-2027 </h1>
     </div>
+
     <div class="body">
+        <div class="img-container">
+            <img src="images/photo_college_ibn_toumart.jpg" alt="" srcset="">
+        </div>
         <h2>La racine carrée</h2>
         <a download="serie_2_3ac_racine_carree.pdf" href="docs/serie_2_3ac_racine_carree.pdf" class="btn">Série de la racine carrée</a>
     </div>
-    
+    <footer >
+        &copy; 2026-2027 
+    </footer>
 </body>
 </html>
